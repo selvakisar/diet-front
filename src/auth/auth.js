@@ -51,7 +51,7 @@ export async function handleReset(payload)
 
     console.log(token);
 
-    const response = await fetch(`${APIauth}/reset-password/${token}`,
+    const response = await fetch(`${APIauth}/resetpass/${token}`,
     {
         method:"POST",
         body: JSON.stringify(payload),
