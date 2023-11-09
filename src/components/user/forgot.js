@@ -13,7 +13,7 @@ const[successMsg,setSuccessMsg]=useState("")
 const navigate=useNavigate()
 
 
-const ForgotUser = async()=>{
+const ForgotUser = async () =>{
     const payload={email}
 
     handleForgot(payload).then((data)=>{
@@ -24,7 +24,7 @@ const ForgotUser = async()=>{
             setSuccessMsg(data.message)
             localStorage.setItem("token",data.token)
         }
-        navigate("/resetpass")
+      
         
     })
 
