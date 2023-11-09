@@ -30,7 +30,7 @@ export async function handleLogin(payload){
 
 export async function handleForgot(payload)
 {
-    const response = await fetch(`${APIauth}/forgotpass`,
+    const response = await fetch(`${APIauth}/forgetpass`,
     {
         method:"POST",
         body: JSON.stringify(payload),
